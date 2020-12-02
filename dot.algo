@@ -1,0 +1,18 @@
+ALGORITHM  Dot product
+VAR
+tab1 : ARRAY_OF INTEGER[];
+tab2 : ARRAY_OF INTEGER[];
+result:INTEGER:=0;
+n:INTEGER;
+i:INTEGER;
+BEGIN
+      for ( i = 0; i < n; i++) {
+    result += tab1[i] * tab2[i];
+  }
+  Write (result);
+  if( result===0){
+      Write('tab1 and tab2 are orthogonale');
+  }
+
+
+END
